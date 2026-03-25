@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Station | Premium Web Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages/game/game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Outfit:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-icon"><i class="fas fa-gamepad"></i></span>
+                    <h1>GameStation</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#game-section">Play Now</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="badge">Remote Play Ready</div>
+                <h1>The Next Generation of <span class="text-gradient">Web Gaming</span></h1>
+                <p>Experience seamless synchronization between your desktop and mobile controller. Built for performance, designed for fun.</p>
+                <div class="hero-actions">
+                    <a href="#game-section" class="cta-button">Launch Game</a>
+                    <button class="secondary-button">How it Works</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="game-section" class="game-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Live Experience</h2>
+                    <p>Connect your smartphone as a controller to take command of the arena.</p>
+                </div>
+                
+                <div class="game-container-wrapper">
+                    <!-- Status Bar -->
+                    <div class="game-status-bar">
+                        <div class="status-indicator">
+                            <span class="status-dot pulse"></span>
+                            <span id="connection-status">Waiting for Controller...</span>
+                        </div>
+                        <div class="game-stats">
+                            <span>FPS: <b id="fps-counter">60</b></span>
+                            <span>Latency: <b id="latency-counter">0ms</b></span>
+                        </div>
+                    </div>
+
+                    <!-- Game Area -->
+                    <div id="game-viewport" class="game-viewport">
+                        <canvas id="game-canvas"></canvas>
+                        
+                        <!-- Interaction Overlays -->
+                        <div id="connection-overlay" class="overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-qrcode fa-3x"></i>
+                                <h3>Ready to Sync?</h3>
+                                <p>Open the controller link on your mobile device to start playing.</p>
+                                <div class="qr-placeholder">[ Controller QR Link ]</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Core Features</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="fas fa-bolt"></i></div>
+                        <h3>Ultra Low Latency</h3>
+                        <p>Optimized data packets ensure near-instant response times for precision gaming.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="fas fa-mobile-screen"></i></div>
+                        <h3>Mobile Controller</h3>
+                        <p>Turn any smartphone into a professional-grade remote without installing apps.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Secure Sync</h3>
+                        <p>End-to-end encrypted communication between your host and remote device.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <h1>GameStation</h1>
+                    </div>
+                    <p>Pushing the boundaries of web-based interactive experiences.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 GameStation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pages/game/game-engine.js"></script>
+
+</body></html>
